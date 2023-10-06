@@ -1,0 +1,155 @@
+/* Estilos para o conteudo da pg */
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #23af62; /* Cor de fundo do conteudo da pg */
+    font-family: Arial, Helvetica, sans-serif; /* fonte padrao*/
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #EFB865; /* Cor de fundo do cabeçalho */
+    color: black; 
+    padding: 10px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px; 
+}
+
+.hamburguer {
+    text-align: center;
+    margin-top: 150px; /* margem superior para separar o conteúdo do cabeçalho */
+}
+
+.hamburguer img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem*/
+}
+
+.texto-hamburguer {
+    font-size: xx-large;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px; /* Ajuste a margem superior para separar o texto do hambúrguer */
+}
+
+.descricao-hamburguer /*"HAMÚRGUER DELICIOSO"*/ {
+    font-size: xx-large;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.txtoutrohamburguer {
+    color: red;
+    font-size:xx-large;
+}
+.preco-hamburguer {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABAIXO O MENU SUSPENSO */
+
+.menu-button {
+    position: relative;
+}
+
+
+.menu-trigger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #EFB865; /* Cor de fundo do submenu */
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+.menu-dropdown.active {
+    display: block;
+}
+
+.menu-dropdown li {
+    margin: 0;
+}
+
+.menu-dropdown a {
+    text-decoration: none;
+    color: #000000; /* Cor do texto no menu suspenso */
+    display: block;
+    padding: 10px;
+}
+
+.menu-trigger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-trigger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-trigger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
